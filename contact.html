@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .menu {
+            position: absolute;
+            top: 20px;
+            left: 10%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 70px;
+            border-radius: 5px;
+        }
+        .menu ul {
+            list-style: none;
+            display: flex;
+            gap: 70px;
+        }
+        .menu ul li {
+            display: inline;
+        }
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .menu ul li a:hover {
+            color: #00bcd4;
+        }
+        .content {
+            position: absolute;
+            left: 10%;
+            bottom: 60px; /* Moves the box just above the footer */
+            color: white;
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .box {
+            background: rgba(0, 0, 0, 0.7);
+            width: 50%;
+            border-radius: 10px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+        .box .title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .box .email {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            left: 10%;
+            color: white;
+            font-size: 1rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="images/contact_bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Degree Portfolio</a></li>
+            <li><a href="about.html">About Ali</a></li>
+            <li><a href="5-afb.html">5-AFB</a></li>
+            <li><a href="contactme.html" style="color: #00bcd4;">Contact Me</a></li> 
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="box">
+            <div class="title">Contact me to collaborate</div>
+            <div class="email">Email: <a href="mailto:alipourfatehian@capilanou.ca" style="color: white; text-decoration: none;">alipourfatehian@capilanou.ca</a></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        @2025 Ali Pourfatehian
+    </div>
+</body>
+</html>

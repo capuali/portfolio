@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Pourfatehian</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: black;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+
+        /* Background Video */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Navigation Menu */
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 10%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 50px;
+            border-radius: 5px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* Main Content */
+        main {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            text-align: left;
+        }
+        main .title {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        main .description {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 5.0px;
+        }
+
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 10px;
+            left: 10%;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                left: 5%;
+                padding: 10px 30px;
+            }
+            nav ul {
+                gap: 30px;
+            }
+            main {
+                left: 5%;
+            }
+            main .title {
+                font-size: 2.5rem;
+            }
+            main .description {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Background Video -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="images/chem.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Ali</a></li>
+            <li><a href="5-afb.html">5-AFB</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="title">Ali Pourfatehian</div>
+        <div class="description">B.Sc. Science - Biomedical.</div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Ali Pourfatehian
+    </footer>
+
+</body>
+</html>
